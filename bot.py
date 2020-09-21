@@ -123,36 +123,3 @@ async def on_message(message):
         await channel.send(message.author)
 
 client_run()
-
-"""
-if len(sys.argv) != 2 or '--help' in sys.argv or '-h' in sys.argv:
-    print('Discord Bot Template v1.4')
-    print('Sourced on Github and created by Cisc0-gif, Ecorp7@protonmail.com\n')
-    print('        -h, --help                 Display this help menu')
-    print('        -t, --text                 Run Discord Bot in CLI mode')
-    print('        -g, --gui                  Run Discord Bot in GUI mode')
-    sys.exit(1)
-
-short = ['-t', '-g']
-long = ['--text', '--gui']
-
-tool = sys.argv[1]
-
-if tool == '-t' or tool == '--text':
-    client.loop.create_task(background_loop())
-    client.run(TOKEN)
-
-if tool == '-g' or tool == '--gui':
-    root = Tk()
-    root.geometry("250x250")
-    root.title("Discord Bot Template")
-    startbutton = Button(root,text="Start", command = client_run)
-    startbutton.place(x=100, y=100)
-    stopbutton = Button(root,text="Stop", command = exit)
-    stopbutton.place(x=100, y=200)
-    startbutton.pack()
-    stopbutton.pack()
-    root.mainloop()
-    root.destroy()
-    root.mainloop()
-"""
