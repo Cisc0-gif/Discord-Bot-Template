@@ -5,13 +5,7 @@
 # @url    : https://github.com/Cisc0-gif
 # @author : Cisc0-gif
 
-import discord
-import asyncio
-import logging
-import os
-import random
-import time
-import sys
+import discord, asyncio, logging, os, random, time, sys
 
 client = discord.Client(command_prefix='/', description='Basic Commands')
 TOKEN = ''
